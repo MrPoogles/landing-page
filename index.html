@@ -4,78 +4,111 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Odin Landing Page</title>
+  <title>MrPoogles' Landing Page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/logo-image.jpg">
 </head>
 
 <body>
+  <div class="navBar">
+    <div class="logoContainer">
+      <img class= "logo" src="./images/logo-image.jpg" alt="logo">
+    </div>
+    <ul class="navBar-link">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://www.youtube.com/watch?v=HaGkk60kcjQ">Subscribe</a></li>
+    </ul>
+  </div>
   <div class="hero">
-    <div class="hero-header">
-      <div class="header-logo">Header Logo</div>
-      <ul class="header-link">
-        <li>header link one</li>
-        <li>header link two</li>
-        <li>header link three</li>
-      </ul>
-    </div>
-    <div class="hero-content">
-      <div class="main-text">
-        <div class="title">This website is awesome</div>
-        <div class="subtext">This website has some
-          subtext that goes here under the main title. 
-          It's a smaller font and the color is lower contrast.
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="title">Welcome!</div>
+        <div class="subtext">
+          <p>A sample Landing Page by me! MrPoogles.</p>
+          <p>Nice to meet ya!</p>
         </div>
-        <button>Sign up</button>
+        <button onclick="alert('Hi!')">Say Hi</button>
       </div>
-      <img class= "top-image" src="./images/coins-in-a-jar.jpg" alt="coins in a jar">
+      <img class= "top-image" src="./images/hero-image.jpg" alt="hero image">
     </div>
   </div>
-  <div class="content">
-    <div class="content-title">Some random information</div>
-    <div class="content-item">
-      <div class="img-container">
-        <img class="con-img" src="./images/coins.jpg" alt="coins">
-        <div class="text">This is some subtext under an illustration or image</div>
-      </div>
-      <div class="img-container"> 
-        <img class="con-img" src="./images/coins2.jpg" alt="coins">
-        <div class="text">This is some subtext under an illustration or image</div>
-      </div>
-      <div class="img-container">
-        <img class="con-img" src="./images/coins3.jpg" alt="coins">
-        <div class="text">This is some subtext under an illustration or image</div>
-      </div>
-      <div class="img-container">
-        <img class="con-img" src="./images/coins4.jpg" alt="coins">
-        <div class="text">This is some subtext under an illustration or image</div>
-      </div>
-    </div>
-  </div>
-  <div class="quote">
-    <div class="quote-main">
-      This is an inspiring quote, or a testimonial form a customer.
-      Maybe it's just filling up space, or maybe people will actually read it.
-      Who knows? All i know is that it looks nice.
-    </div>
-    <div class="quoters">
-      -Quotie, Quoter Extraordinaire
-    </div>
-  </div>
-  <div class="action">
-    <div class="action-content">
-      <div class="action-text">
-        <div class="action-title">
-          Call to action! It's time!
-        </div>
-        <div class="action-sub">
-          Sign up for our product by clicking that 
-          button right over there!
+  <div class="wrapper">
+    <div id ="projects" class="content">
+      <div class="content-container">
+        <div class="content-title">Now that you're here..... why not check other MrPoogles' mini projects below?</div>
+        <div class="content-item">
+          <div class="img-container">
+            <a href="https://mrpoogles.github.io/odin-recipes/">
+              <img class="con-img" src="./images/recipe-icon.png" alt="recipes icon">
+            </a>
+            <div class="text">Odin Recipe</div>
+            <div class="imgSubtext">My favorite dishes' recipe</div>
+          </div>
+          <div class="img-container">
+            <a href="javascript:location.reload();">
+              <img class="con-img" src="./images/landing-page-icon.png" alt="landing page icon">
+            </a>
+            <div class="text">Landing Page</div>
+            <div class="imgSubtext">...you're actually viewing it right now</div>
+          </div>
+          <div class="img-container">
+            <a href="https://mrpoogles.github.io/rock-paper-scissors/">
+              <img class="con-img" src="./images/rps-icon.png" alt="rps icon">
+            </a>
+            <div class="text">RPS Game</div>
+            <div class="imgSubtext">Rock-paper-scissor game with UI!</div>
+          </div>
+          <div class="img-container">
+            <a href="https://mrpoogles.github.io/etch-a-sketch/">
+              <img class="con-img" src="./images/sketch-icon.png" alt="sketch icon">
+            </a>
+            <div class="text">Etch a Sketch</div>
+            <div class="imgSubtext">by pixel coloring</div>
+          </div>
+          <div class="img-container">
+            <a href="https://mrpoogles.github.io/calculator/">
+              <img class="con-img" src="./images/calculator-icon.png" alt="calculator icon">
+            </a>
+            <div class="text">Calculator</div>
+            <div class="imgSubtext">Now with keyboard support!</div>
+          </div>
         </div>
       </div>
-      <button class="action-button">Sign up</button>
+    </div>
+    <div id="about" class="quote">
+      <div class="quote-container">
+        <div class="quote-main">
+          "This page was originally created as one of the projects from The Odin Project (TOP), Foundations.
+          After completing it, I was contemplating to compile or link together all of foundations courses' project into one big viewable, portofolio-like page.
+          So, I decided to use this page to do so. Smart right?"
+        </div>
+        <div class="quoters-container">
+          <div class="quoters">-MrPoogles</div>
+        </div>
+      </div>
+    </div>
+    <div class="action">
+      <div class="action-content">
+        <div class="action-text">
+          <div class="action-title">
+            How about YOU subscribe to me?
+          </div>
+          <div class="action-sub">
+            <p>Subscribe to me and and i give you something in return.</p>
+            <p>Just click on them subscribe button!</p>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <button class="action-button">Subscribe</button>
+        </a>
+      </div>
     </div>
   </div>
-  <div class="footer">Copyright &copy; The Odin Project 2021</div>
+  <div class="footer">
+    <div>Copyright &copy; The Odin Project 2021</div>
+    <div>Webpage by: MrPoogles</div>
+  </div>
 </body>
 
 </html>
